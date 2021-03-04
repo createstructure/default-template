@@ -1,6 +1,8 @@
 {
   "This is the default template.": "soldescrsol",
+  "createstructure/default-template": "solnamesol",
   "default-template": "solnamesol",
+  "default": "solnamesol",
   "template": "solnamesol",
   "\n - .createstructure\n   - change.json": "",
   "2020-08-16": "time__now"
