@@ -6,5 +6,5 @@
   "default": "solnamesol",
   "template": "solnamesol",
   "\n - .createstructure\n   - change.json": "",
-  "2021-3-4": "time-now"
+  "2021-3-4": "soltime-nowsol"
 }
