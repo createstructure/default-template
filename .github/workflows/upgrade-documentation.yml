@@ -56,7 +56,7 @@ jobs:
         echo "\`\`\`" >> Directory-Structure.md
         tree ../repo >> Directory-Structure.md
         echo "\`\`\`" >> Directory-Structure.md
-        sed -i "s/..\/repo/$GITHUB_REPOSITORY/g" Directory-Structure.md
+        sed -i "s/..\/repo//g" Directory-Structure.md
         sed -i 's/bin/bin # source code/g' Directory-Structure.md
         sed -i 's/docs/docs # documentation/g' Directory-Structure.md
     - name: _Footer file
