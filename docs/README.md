@@ -1,10 +1,15 @@
+# default-template
+[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/default-template/blob/v10-beta/docs/LICENSE)
+![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
+![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
+
 ## :octocat: Description :octocat:
 This is the default template
 ![createstructure/default-template](https://opengraph.githubassets.com/0d7c1a77feb8ec0c3726bdb77551f3b86461536a3c85705fa8c74f16e6945d22/createstructure/default-template)
 ## :octocat: Directory structure :octocat:
 
 ```
-$GITHUB_REPOSITORY
+
 ├── bin # source code
 │   └── default
 └── docs # documentation
