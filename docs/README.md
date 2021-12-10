@@ -14,10 +14,11 @@ This is the default template
 │   └── default
 └── docs # documentation
     ├── CHANGELOG.md
+    ├── CODE_OF_CONDUCT.md
     ├── LICENSE
     └── README.md
 
-2 directories, 4 files
+2 directories, 5 files
 ```
 ##  Changelog 
 
