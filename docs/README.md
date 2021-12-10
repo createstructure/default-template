@@ -33,7 +33,9 @@ This is the changelog of the default-createstructure repository.
   - [Automate documentation creation](https://github.com/createstructure/default-template/issues/6)
 
 ### v01.01.01_2021-03-04
- - Initial version---
+ - Initial version
+
+---
 Made w/ :heart: by Castellani Davide
 
 If you want to contribute you can start with:
