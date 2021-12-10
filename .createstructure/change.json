@@ -1,11 +1,12 @@
 
 {
-  "This is the default template.": "soldescrsol",
+  "This is the default template": "soldescrsol",
   "createstructure/default-template": "solnamesol",
   "default-template": "solnamesol",
   "default": "solnamesol",
   "template": "solnamesol",
   "\n - .createstructure\n   - change.json": "",
+  "![createstructure/default-template]": "\n\nThis repo is made using createstructure and this template:\n![createstructure/default-template]",
   "Castellani%20Davide": "solusernamesol",
   "<year>" : "soltimeyearsol",
   "<name of author>": "solusernamesol",
