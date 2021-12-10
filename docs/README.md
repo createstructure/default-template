@@ -3,10 +3,10 @@
 ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
 ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
 
-## :octocat: Description :octocat:
+##  Description 
 This is the default template
 ![createstructure/default-template](https://opengraph.githubassets.com/0d7c1a77feb8ec0c3726bdb77551f3b86461536a3c85705fa8c74f16e6945d22/createstructure/default-template)
-## :octocat: Directory structure :octocat:
+##  Directory structure 
 
 ```
 
@@ -19,11 +19,11 @@ This is the default template
 
 2 directories, 4 files
 ```
-## :octocat: Changelog :octocat:
+##  Changelog 
 
 This is the changelog of the default-createstructure repository.
 
-- [:octocat: Changelog :octocat:](#changelog)
+- [ Changelog ](#changelog)
   - [v10.01.01_2021-12-10](#v100101_2021-12-10)
   - [v01.01.01_2021-03-04](#v010101_2021-03-04)
 
