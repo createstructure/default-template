@@ -1,38 +1,44 @@
-# default
-[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/CastellaniDavide/default-template/blob/master/LICENSE) ![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat) ![Version](https://img.shields.io/badge/version-v1.0-blue?style=flat) ![Language ...](https://img.shields.io/badge/language-...-yellowgreen?style=flat) ![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-...-blue?style=flat) [![On GitHub](https://img.shields.io/badge/on%20GitHub-True-green?style=flat&logo=github)](https://github.com/createstructure/default)
+# default-template
+[![GitHub license](https://img.shields.io/badge/license-GNU-green?style=flat)](https://github.com/createstructure/default-template/blob/v10-beta/docs/LICENSE)
+![Author](https://img.shields.io/badge/author-Castellani%20Davide-green?style=flat)
+![sys.platform supported](https://img.shields.io/badge/OS%20platform%20supported-all-blue?style=flat) 
 
-# Description
-This is the default template.
+##  Description 
+This is the default template
+![createstructure/default-template](https://opengraph.githubassets.com/0d7c1a77feb8ec0c3726bdb77551f3b86461536a3c85705fa8c74f16e6945d22/createstructure/default-template)
+##  Directory structure 
 
-## Required
- - 
- 
-## Directories structure
- - .createstructure
-   - change.json
- - .github
-   - ISSUE_TEMPLATE
-     - bug_report.md
-     - feature-request.md
- - bin
-     - default
- - doc
-   - LICENSE
-   - README.md
- - log
-   - trace.log
-   
-### Execution examples
- - 
+```
 
-# Changelog
- - [Version_1.0_2021-3-4](#Version_10_2021-3-4)
+├── bin # source code
+│   └── default
+└── docs # documentation
+    ├── CHANGELOG.md
+    ├── CODE_OF_CONDUCT.md
+    ├── LICENSE
+    └── README.md
 
-## Version_1.0_2021-3-4
+2 directories, 5 files
+```
+##  Changelog 
+
+This is the changelog of the default-createstructure repository.
+
+- [ Changelog ](#changelog)
+  - [[10.01.01] - 2021-12-10](#100101---2021-12-10)
+  - [[01.01.01] - 2021-03-04](#010101---2021-03-04)
+
+### [10.01.01] - 2021-12-10
+- [v10-beta (default-template)](https://github.com/createstructure/default-template/issues/5)
+  - [Optimize template](https://github.com/createstructure/default-template/issues/7)
+  - [Automate documentation creation](https://github.com/createstructure/default-template/issues/6)
+
+### [01.01.01] - 2021-03-04
  - Initial version
 
 ---
-Made by Castellani Davide 
-If you have any problem please contact me:
-- help@castellanidavide.it
-- [Issue](https://github.com/createstructure/default/issues)
+Made w/ :heart: by Castellani Davide
+
+If you want to contribute you can start with:
+- [Discussion](https://github.com/createstructure/default-template/discussions)
+- [Issue](https://github.com/createstructure/default-template/issues/new)
