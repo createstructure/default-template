@@ -13,3 +13,4 @@ This is the changelog of the default-createstructure repository.
 
 ## v01.01.01_2021-03-04
  - Initial version
+
