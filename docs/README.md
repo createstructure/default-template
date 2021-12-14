@@ -5,7 +5,7 @@
 
 ##  Description 
 This is the default template
-![createstructure/default-template](https://opengraph.githubassets.com/92697cc8f0ca921dbc36b4efff4876404a30387b516af43d295a1d10015a2c15/createstructure/default-template)
+![createstructure/default-template](https://opengraph.githubassets.com/e6c4a2eb3399dda1633a0cc19d2f1a57a9fabefc59601798a855ae20d99ae772/createstructure/default-template)
 ##  Directory structure 
 
 ```
