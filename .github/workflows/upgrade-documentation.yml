@@ -36,7 +36,7 @@ jobs:
         def get_social_img():
           """ Get social image
           """
-          soup = BeautifulSoup(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers=('$GITHUB_ACTOR', '$GITHUB_TOKEN'}).text, 'html.parser')
+          soup = BeautifulSoup(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers={'Authorization': 'token $GITHUB_TOKEN'}).text, 'html.parser')
           return soup.find("meta", property="og:image")["content"]
         def get_content():
           """ Returns the file content
