@@ -16,11 +16,11 @@ jobs:
         sudo apt update -y
         sudo pip install BeautifulSoup4
         {
-          git clone --recurse-submodules --depth 1 https://$.GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.wiki.git wiki
+          git clone --recurse-submodules --depth 1 https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.wiki.git wiki
         } || {
           mkdir wiki
         }
-        git clone --recurse-submodules --depth 1 https://$.GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git -b $(echo ${GITHUB_REF#refs/heads/}) repo
+        git clone --recurse-submodules --depth 1 https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git -b $(echo ${GITHUB_REF#refs/heads/}) repo
         rm -f wiki/*.md
     - name: Home file
       run: |
@@ -32,11 +32,12 @@ jobs:
         def get_json():
           """ Returns the json with description
           """
-          return json.loads(requests.post("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY", headers={'Authorization': 'token $GITHUB_TOKEN'}).text)
+          return json.loads(requests.post("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY", headers={'Authorization': "token $GITHUB_TOKEN"}).text)
         def get_social_img():
           """ Get social image
           """
-          soup = BeautifulSoup(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers={'Authorization': 'token $GITHUB_TOKEN'}).text, 'html.parser')
+          print(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers={'Authorization': "token $GITHUB_TOKEN"}).text)
+          soup = BeautifulSoup(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers={'Authorization': "token $GITHUB_TOKEN"}).text, 'html.parser')
           return soup.find("meta", property="og:image")["content"]
         def get_content():
           """ Returns the file content
