@@ -31,10 +31,8 @@ jobs:
         from bs4 import BeautifulSoup
         def web_request(url):
           """ Make a web request and return the response
-          """
-          session = requests.Session()
-          session.headers['Authorization'] = "token ${{ secrets.GITHUB_TOKEN }}"
-          return session.post(url).text
+          """ 
+          return requests.get(url, auth=("$GITHUB_ACTOR", "${{ secrets.GITHUB_TOKEN }}")).text
         def get_json():
           """ Returns the json with description
           """
