@@ -38,6 +38,7 @@ jobs:
         def get_json():
           """ Returns the json with description
           """
+          print(web_request("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY"))
           return json.loads(web_request("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY"))
         def get_social_img():
           """ Get social image
