@@ -29,15 +29,21 @@ jobs:
         import requests
         import json
         from bs4 import BeautifulSoup
+        def web_request(url):
+          """ Make a web request and return the response
+          """
+          session = requests.Session()
+          session.get(url)
+          return session.post(url, headers={'Authorization': "token ${{ secrets.GITHUB_TOKEN }}"}).text
         def get_json():
           """ Returns the json with description
           """
-          return json.loads(requests.post("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY", headers={'Authorization': "token $GITHUB_TOKEN"}).text)
+          return json.loads(web_request("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY"))
         def get_social_img():
           """ Get social image
           """
-          print(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers={'Authorization': "token $GITHUB_TOKEN"}).text)
-          soup = BeautifulSoup(requests.post("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", headers={'Authorization': "token $GITHUB_TOKEN"}).text, 'html.parser')
+          print(web_request("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"))
+          soup = BeautifulSoup(web_request("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"), 'html.parser')
           return soup.find("meta", property="og:image")["content"]
         def get_content():
           """ Returns the file content
