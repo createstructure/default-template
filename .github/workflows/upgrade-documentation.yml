@@ -26,21 +26,17 @@ jobs:
       run: |
         cd wiki
         python3 << EOF
-        from urllib import urlopen, Request
+        import urllib.request
         import json
         from bs4 import BeautifulSoup
-        def web_request(url):
-          req = Request(url)
-          req.add_header('Authorization', 'Bearer $GITHUB_TOKEN')
-          return urlopen(req).read()
         def get_json():
           """ Returns the json with description
           """
-          return json.loads(web_request("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY").read().decode())
+          return json.loads(urllib.request.urlopen("$GITHUB_API_URL/repos/$GITHUB_REPOSITORY", auth=('$GITHUB_ACTOR', '$GITHUB_TOKEN')).read().decode())
         def get_social_img():
           """ Get social image
           """
-          soup = BeautifulSoup(web_request("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY").read().decode(), 'html.parser')
+          soup = BeautifulSoup(urllib.request.urlopen("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY", auth=('$GITHUB_ACTOR', '$GITHUB_TOKEN')).read().decode(), 'html.parser')
           return soup.find("meta", property="og:image")["content"]
         def get_content():
           """ Returns the file content
