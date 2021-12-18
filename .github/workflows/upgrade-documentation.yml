@@ -42,9 +42,12 @@ jobs:
         def get_social_img():
           """ Get social image
           """
-          print(web_request("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"))
-          soup = BeautifulSoup(web_request("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"), 'html.parser')
-          return soup.find("meta", property="og:image")["content"]
+          try:
+            soup = BeautifulSoup(web_request("$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"), 'html.parser')
+            return soup.find("meta", property="og:image")["content"]
+          except:
+            print("Error getting social image")
+            return ""
         def get_content():
           """ Returns the file content
           """
