@@ -8,10 +8,15 @@
   "\n - .createstructure\n   - change.json": "",
   "![createstructure/default-template]": "\n\nThis repo is made using createstructure and this template:\n![createstructure/default-template]",
   "Castellani%20Davide": "solusernamesol",
-  "DavideC03": "solusernamesol",
+  "@DavideC03": "@solusernamesol",
   "<year>" : "soltimeyearsol",
   "<name of author>": "solusernamesol",
   "<one line to give the program's name and a brief idea of what it does.>": "soldescrsol",
   "<program>": "solnamesol",
-  "This is the changelog of the default-createstructure repository.": "soldescrsol"
+  "This is the changelog of the default-createstructure repository.": "soldescrsol",
+  "2021-03-04": "soltime-nowsol",
+  "\n  - [[10.01.01] - 2021-12-10](#100101---2021-12-10)": "",
+  "\n  ## [10.01.01] - 2021-12-10\n- [v10-beta (default-template)](https://github.com/createstructure/default-template/issues/5)\n  - [Optimize template](https://github.com/createstructure/default-template/issues/7)\n  - [Automate documentation creation](https://github.com/createstructure/default-template/issues/6)": "",
+  "\n  - [[10.01.02] - 2022-01-05](#100102---2022-01-05)": "",
+  "\n## [10.01.02] - 2022-01-05\n- [Add sponsorship button](https://github.com/createstructure/createstructure.github.io/issues/36)": ""
 }
