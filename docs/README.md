@@ -5,7 +5,7 @@
 
 ##  Description 
 This is the default template
-![createstructure/default-template](https://opengraph.githubassets.com/d57966ae448b8fc09a3ead520dcec768acda9f5bfc112b4128294b159552c805/createstructure/default-template)
+![createstructure/default-template](https://opengraph.githubassets.com/cf4891d1ca34cb9699f58b62ad889f1b369fad174bbb7dc2b3abfa7b482580a6/createstructure/default-template)
 ##  Directory structure 
 
 ```
@@ -21,12 +21,15 @@ This is the default template
 2 directories, 5 files
 ```
 ##  Changelog 
-
 This is the changelog of the default-createstructure repository.
 
 - [ Changelog ](#changelog)
+  - [[10.01.02] - 2022-01-05](#100102---2022-01-05)
   - [[10.01.01] - 2021-12-10](#100101---2021-12-10)
   - [[01.01.01] - 2021-03-04](#010101---2021-03-04)
+
+### [10.01.02] - 2022-01-05
+- [Add sponsorship button](https://github.com/createstructure/createstructure.github.io/issues/36)
 
 ### [10.01.01] - 2021-12-10
 - [v10-beta (default-template)](https://github.com/createstructure/default-template/issues/5)
